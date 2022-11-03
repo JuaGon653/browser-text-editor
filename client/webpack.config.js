@@ -39,6 +39,10 @@ module.exports = () => {
             destination: path.join('assets', 'icons')
           }
         ]
+      }),
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: '/service-worker.js'
       })
       
     ],
