@@ -34,10 +34,11 @@ module.exports = () => {
         theme_color: '#225ca3',
         orientation: 'portrait',
         display: 'standalone',
+        crossorigin: 'anonymous',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
-            sizes: [96, 128, 192, 512],
+            sizes: '96x96',
             destination: path.join('assets', 'icons')
           }
         ]
@@ -54,6 +55,15 @@ module.exports = () => {
         {
           test: /\.css$/i,
           use: [MiniCssExtractPlugin.loader, 'css-loader']
+        },
+        {
+          test: /\.(png|jpg|gif)$/,
+          type: 'asset/resource',
+          use: {
+            options: {
+              name: '[name].[ext]'
+            }
+          }
         },
         {
           test: /\.m?js$/,
