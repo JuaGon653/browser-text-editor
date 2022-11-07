@@ -22,7 +22,7 @@ export const putDb = async (content) => {
   // open the indicated object store
   const store = tx.objectStore('jate');
   // put data in the indexDB with the id of 1
-  const request = store.put({id: 1, jate: content});
+  const request = store.put({id: 1, value: content});
 
   const result = await request;
   console.log('result.value', result);
