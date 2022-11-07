@@ -21,7 +21,8 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'JATE'
+        title: 'JATE',
+        favicon: './favicon.ico'
       }),
       new MiniCssExtractPlugin(),
       new WebpackPwaManifest({
