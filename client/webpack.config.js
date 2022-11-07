@@ -59,12 +59,7 @@ module.exports = () => {
         },
         {
           test: /\.(png|jpg|gif)$/,
-          type: 'asset/resource',
-          use: {
-            options: {
-              name: '[name].[ext]'
-            }
-          }
+          type: 'asset/resource'
         },
         {
           test: /\.m?js$/,
