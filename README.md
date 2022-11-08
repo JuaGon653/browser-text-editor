@@ -5,3 +5,12 @@ For challenge 19 of the UT Austin Coding Bootcamp, I was given starter code and 
 
 ## Link to Deployed Application
 Click [here](https://browser-text-editor.herokuapp.com/).
+
+## Screenshots
+![jate](https://user-images.githubusercontent.com/106782112/200624622-23934ea8-ad00-4298-abb8-7e7688189a42.png)
+
+#### Manifest
+![manifest](https://user-images.githubusercontent.com/106782112/200625162-bff099cd-9f9f-4093-aa4b-434b5cd4c4fc.png)
+
+#### Service Worker
+![sw](https://user-images.githubusercontent.com/106782112/200625550-6305eef7-b3ef-4097-9a22-46bf80025d9f.png)
